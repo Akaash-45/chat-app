@@ -15,7 +15,7 @@ import path from "path";
 const __dirname = path.resolve();
 
 // Load environment variables from backend/.env file
-dotenv.config({ path: path.join(__dirname, "backend", ".env") });
+dotenv.config({ path: path.join(__dirname, ".env") });
 
 // Validate required environment variables
 if (!process.env.MONGO_DB_URI) {
